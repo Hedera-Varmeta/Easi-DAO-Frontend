@@ -1,0 +1,18 @@
+import { TableCell } from "@mui/material";
+import { styled } from "@mui/material/styles";
+
+const DotIcon = styled("div")(({ theme }) => ({
+  borderRadius: "50%",
+  width: "5px",
+  height: "5px",
+  backgroundColor: theme.palette.text.primary,
+  marginRight: '5px',
+}));
+
+export { DotIcon };
+
+
+export const TableCellStyled = styled(TableCell)(({ theme }) => ({
+  fontWeight: 400,
+  fontSize: '0.95em'
+}));

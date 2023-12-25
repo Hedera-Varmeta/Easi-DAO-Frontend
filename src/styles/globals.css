@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #8364e2;
+  --secondary-color: #e0eeff;
+  --black-color: #17171d;
+  --blue-color-70: #3898e2;
+  --pink-color: #bc84ca;
+  --navbar-height: 90px;
+  --error: #ff6d60;
+  --text-des-color: #6d6969;
+  --box-shadow-container: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --for-vote-color: #60c5a3;
+  --against-vote-color: #ff4c4c;
+  --abstain-vote-color: #667085;
+
+  --deposit-color: #32CD32;
+  --withdraw-color: #FF4500;
+}
+html,
+body {
+  font-family: 'DM Sans', sans-serif;
+  /* -webkit-font-smoothing: auto; */
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.is-sticky {
+  animation: slideDown 0.5s ease-out;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+:-webkit-any-link {
+  color: initial;
+  text-decoration: initial;
+}
+.error.wmde-markdown-var.w-md-editor.w-md-editor-show-edit {
+  box-shadow: 0 0 0 .5px var(--error),
+    0 0 0 var(--error),
+    0 .5px .5px var(--error);
+}
+
+@keyframes cycle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: cycle 2s 1 forwards;
+}
+
+a {
+  cursor: pointer;
+  color: #3898e2;
+}
